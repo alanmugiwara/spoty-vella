@@ -1,0 +1,13 @@
+make setup
+make dev
+
+
+Depois, no VS Code:
+
+abra a pasta do projeto;
+edite os arquivos em ui/src;
+salve;
+veja as mudanças instantaneamente em http://localhost:4533.
+
+
+https://www.navidrome.org/docs/developers/dev-environment/
