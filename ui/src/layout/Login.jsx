@@ -179,6 +179,9 @@ const FormLogin = ({ loading, handleSubmit, validate }) => {
                   {translate('ra.auth.sign_in')}
                 </Button>
               </CardActions>
+              <div style={{ textAlign: 'center', padding: '0 1em 1em 1em', color: '#888', fontSize: '0.75em' }}>
+                Spoty-Vella v0.2 | By alanmugiwara<br/>Fork from Navidrome 0.64.2 | By deluan
+              </div>
             </Card>
             <Notification />
           </div>
