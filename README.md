@@ -1,89 +1,286 @@
-<a href="https://www.navidrome.org"><img src="resources/logo-192x192.png" alt="Navidrome logo" title="navidrome" align="right" height="60px" /></a>
+<a href="https://www.navidrome.org"><img src="resources/logo-192x192.png" alt="Navidrome logo" title="navidrome" align="right" height="100px" /></a>
 
-# Navidrome Music Server &nbsp;[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Tired%20of%20paying%20for%20music%20subscriptions%2C%20and%20not%20finding%20what%20you%20really%20like%3F%20Roll%20your%20own%20streaming%20service%21&url=https://navidrome.org&via=navidrome)
+# Spoty-Vella -  O Spotify da Favela!
+[![Docker Image](https://img.shields.io/badge/Docker%20HUB-alanmugiwara%2Fspoty--vella-2496ED?color=8A2BE2&style=for-the-badge&logo=docker&logoColor=white)](https://github.com/alanmugiwara/spoty-vella)
+[![Based on RomM](https://img.shields.io/badge/Based%20on-navidrome%200.64.2-8A2BE2?style=for-the-badge)](https://github.com/navidrome/navidrome)
+[![License](https://img.shields.io/badge/License-GPL--3.0-8A2BE2?style=for-the-badge)](https://github.com/alanmugiwara/spoty-vella?tab=GPL-3.0-1-ov-file)
+[![Create Date](https://img.shields.io/badge/created%20on-set%2029,%202026-8A2BE2?style=for-the-badge)](https://github.com/alanmugiwara/spoty-vella)
+[![Last update](https://img.shields.io/github/last-commit/alanmugiwara/spoty-vella?color=8A2BE2&label=Last%20Commit&style=for-the-badge)](https://github.com/alanmugiwara/spoty-vella)
+[![Contributors](https://img.shields.io/github/contributors/alanmugiwara/spoty-vella?color=8A2BE2&style=for-the-badge)](https://github.com/alanmugiwara/spoty-vella)
+[![Issues Counter](https://img.shields.io/github/issues/alanmugiwara/spoty-vella?color=8A2BE2&style=for-the-badge)](https://github.com/alanmugiwara/spoty-vella)
+[![Repo Size](https://img.shields.io/github/repo-size/alanmugiwara/spoty-vella?color=8A2BE2&style=for-the-badge)](https://github.com/alanmugiwara/spoty-vella)
+[![Docker Image Size](https://img.shields.io/docker/image-size/alanmugiwara/spoty-vella?logo=docker&logoColor=white&color=8A2BE2&style=for-the-badge)](https://github.com/alanmugiwara/spoty-vella)
+[![Docker image Pulls](https://img.shields.io/docker/pulls/alanmugiwara/spoty-vella?logo=docker&logoColor=white&label=Image%20pulls&style=for-the-badge&color=8A2BE2)](https://hub.docker.com/r/alanmugiwara/spoty-vella)
 
-[![Last Release](https://img.shields.io/github/v/release/navidrome/navidrome?logo=github&label=latest&style=flat-square)](https://github.com/navidrome/navidrome/releases)
-[![Build](https://img.shields.io/github/actions/workflow/status/navidrome/navidrome/pipeline.yml?branch=master&logo=github&style=flat-square)](https://nightly.link/navidrome/navidrome/workflows/pipeline/master)
-[![Downloads](https://img.shields.io/github/downloads/navidrome/navidrome/total?logo=github&style=flat-square)](https://github.com/navidrome/navidrome/releases/latest)
-[![Docker Pulls](https://img.shields.io/docker/pulls/deluan/navidrome?logo=docker&label=pulls&style=flat-square)](https://hub.docker.com/r/deluan/navidrome)
-[![Dev Chat](https://img.shields.io/discord/671335427726114836?logo=discord&label=discord&style=flat-square)](https://discord.gg/xh7j7yF)
-[![Subreddit](https://img.shields.io/reddit/subreddit-subscribers/navidrome?logo=reddit&label=/r/navidrome&style=flat-square)](https://www.reddit.com/r/navidrome/)
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0-ff69b4.svg?style=flat-square)](CODE_OF_CONDUCT.md)
-[![Gurubase](https://img.shields.io/badge/Gurubase-Ask%20Navidrome%20Guru-006BFF?style=flat-square)](https://gurubase.io/g/navidrome)
+# Um Spotify self-hosted para sua coleção musical!
 
-Navidrome is an open source web-based music collection server and streamer. It gives you freedom to listen to your
-music collection from any browser or mobile device. It's like your personal Spotify!
+Spoty-Vella é uma distribuição customizada do [Navidrome](https://github.com/navidrome/navidrome): escaneia sua biblioteca de músicas, serve tudo via protocolo Subsonic, e entrega uma interface web moderna para navegar, ouvir, criar playlists, gerenciar favoritos e tudo isso sem instalar nada no cliente, rodando direto pelo navegador ou por qualquer app compatível com Subsonic. Como o [Musly](https://github.com/dddevid/musly), o qual recomendo utilizar, pois além de ser funcionar e capricar na estética possui versões pra diversas arquiteturas
 
+O nome é uma brincadeira com "Spotify" e "Favela" - uma homenagem bem-humorada à experiência de ter seu próprio streaming pessoal, sem algoritmos, sem anúncios e sem assinar nada. Sua música, do seu jeito, no seu próprio servidor.
 
-**Note**: The `master` branch may be in an unstable or even broken state during development. 
-Please use [releases](https://github.com/navidrome/navidrome/releases) instead of 
-the `master` branch in order to get a stable set of binaries.
+Mais do que uma customização do Navidrome, o Spoty-Vella é uma forma de resgatar o prazer de ter uma coleção musical de forma organizada, com capas, letras, scrobbles já definidos. Tudo isso com o mínimo de configuração possível.
 
-## [Check out our Live Demo!](https://www.navidrome.org/demo/)
+---
 
-__Any feedback is welcome!__ If you need/want a new feature, find a bug or think of any way to improve Navidrome, 
-please file a [GitHub issue](https://github.com/navidrome/navidrome/issues) or join the discussion in our 
-[Subreddit](https://www.reddit.com/r/navidrome/). If you want to contribute to the project in any other way 
-([ui/backend dev](https://www.navidrome.org/docs/developers/), 
-[translations](https://www.navidrome.org/docs/developers/translations/), 
-[themes](https://www.navidrome.org/docs/developers/creating-themes)), please join the chat in our 
-[Discord server](https://discord.gg/xh7j7yF). 
+## Funcionalidades
 
-## Installation
+- **Biblioteca organizada:** escaneia automaticamente sua pasta de músicas e organiza por artista, álbum e gênero.
 
-See instructions on the [project's website](https://www.navidrome.org/docs/installation/)
+- **Protocolo Subsonic:** compatível com diversos apps para Android, iOS, desktop e CLI.
 
-## Cloud Hosting
+- **Interface web moderna:** built com React + Material UI, com suporte a PWA para instalar como app.
 
-[PikaPods](https://www.pikapods.com) has partnered with us to offer you an 
-[officially supported, cloud-hosted solution](https://www.navidrome.org/docs/installation/managed/#pikapods). 
-A share of the revenue helps fund the development of Navidrome at no additional cost for you.
+- **Temas visuais:** vários temas incluídos - Dracula, Nord, Tokyo Night, Rose Piné, Catppuccin, Monokai, Spotify e mais.
 
-[![PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=navidrome)
+- **Agentes ativos por padrão:** os agentes de metadados (`artist-nfo-metadata`, `apple-music`, `coverartarchive`, `deezer`, `lastfm`) já vêm pré-configurados no `.env`, sem necessidade de configuraçãoa adiconal além das credenciais nessesárias.
 
-## Features
- 
- - Handles very **large music collections**
- - Streams virtually **any audio format** available
- - Reads and uses all your beautifully curated **metadata**
- - Great support for **compilations** (Various Artists albums) and **box sets** (multi-disc albums)
- - **Multi-user**, each user has their own play counts, playlists, favourites, etc...
- - Very **low resource usage**
- - **Multi-platform**, runs on macOS, Linux and Windows. **Docker** images are also provided
- - Ready to use binaries for all major platforms, including **Raspberry Pi**
- - Automatically **monitors your library** for changes, importing new files and reloading new metadata 
- - Supports **lyrics** from sidecar .ttml, .yaml/.yml Lyricsfile, .elrc, .lrc, .srt, .txt files and embedded TTML, Enhanced LRC, LRC, SRT, and plain-text tags (via `lyricspriority`)
- - **Themeable**, modern and responsive **Web interface** based on [Material UI](https://material-ui.com)
- - **Compatible** with all Subsonic/Madsonic/Airsonic [clients](https://www.navidrome.org/docs/overview/#apps)
- - **Transcoding** on the fly. Can be set per user/player. **Opus encoding is supported**
- - Translated to **various languages**
+- **Reload de plugins sem reboot:** o reload automático de plugins está habilitado por padrão - atualizações e novos plugins são carregados sem derrubar a aplicação, preservando sessões, serviços e agentes já em execução.
 
-## Translations
+- **Scrobbling:** integração nativa com Last.fm e ListenBrainz para registrar o que você ouve. (Não esqueça de por as suas credenciais de API)
 
-Navidrome uses [POEditor](https://poeditor.com/) for translations, and we are always looking 
-for [more contributors](https://www.navidrome.org/docs/developers/translations/)
+- **Metadados ricos:** leitura de tags dos arquivos (ID3, FLAC, etc.) via TagLib.
 
-<a href="https://poeditor.com/"> 
-<img height="32" src="https://github.com/user-attachments/assets/c19b1d2b-01e1-4682-a007-12356c42147c">
-</a>
+- **Multi-usuário:** sistema de autenticação com diferentes níveis de permissão e suporte a OIDC.
 
-## Documentation
-All documentation can be found in the project's website: https://www.navidrome.org/docs. 
-Here are some useful direct links:
+- **Transcodificação:** converte formatos de áudio on-the-fly via FFmpeg.
 
-- [Overview](https://www.navidrome.org/docs/overview/)
-- [Installation](https://www.navidrome.org/docs/installation/)
-  - [Docker](https://www.navidrome.org/docs/installation/docker/)
-  - [Binaries](https://www.navidrome.org/docs/installation/pre-built-binaries/)
-  - [Build from source](https://www.navidrome.org/docs/installation/build-from-source/)
-- [Development](https://www.navidrome.org/docs/developers/)
-- [Subsonic API Compatibility](https://www.navidrome.org/docs/developers/subsonic-api/)
+- **Pronto para Docker:** imagem publicada no Docker Hub, configuração por variáveis de ambiente.
 
-## Screenshots
+---
 
-<p align="left">
-    <img height="550" src="https://raw.githubusercontent.com/navidrome/navidrome/master/.github/screenshots/ss-mobile-login.png">
-    <img height="550" src="https://raw.githubusercontent.com/navidrome/navidrome/master/.github/screenshots/ss-mobile-player.png">
-    <img height="550" src="https://raw.githubusercontent.com/navidrome/navidrome/master/.github/screenshots/ss-mobile-album-view.png">
-    <img width="550" src="https://raw.githubusercontent.com/navidrome/navidrome/master/.github/screenshots/ss-desktop-player.png">
-</p>
+## Stack
+
+- [Navidrome](https://github.com/navidrome/navidrome) - base do projeto (servidor de música Subsonic)
+
+- [Go 1.27](https://go.dev/) - backend
+
+- [React 17](https://react.dev/) + [Vite](https://vitejs.dev/) - frontend
+
+- [SQLite](https://www.sqlite.org/) - banco de dados embarcado dentro do container
+
+- [FFmpeg](https://ffmpeg.org/) - transcodificação de áudio
+
+- [TagLib](https://taglib.org/) - leitura de metadados dos arquivos
+
+- [Docker](https://www.docker.com/) ou [Podman](https://podman.io/) - empacotamento e deploy
+
+---
+
+## Deploy rápido com Docker Compose ou Podman Compose
+
+### 1. Baixe o projeto e entre no diretório de trabalho
+
+```bash
+git clone https://github.com/alanmugiwara/spoty-vella && \
+cd spoty-vella/app
+```
+
+### 2. Configure suas variáveis de ambiente
+
+Renomeie o `.env.exemple` para `.env` e edite-o com suas credenciais:
+
+```env
+HOST_DATA=/caminho/para/os/dados/do/navidrome
+HOST_MUSIC=/caminho/para/seu/diretorio/de/musicas
+ND_AGENTS=artist-nfo-metadata,apple-music,coverartarchive,deezer,lastfm
+LASTFM_APIKEY=sua-api-key-lastfm
+LASTFM_SECRET=seu-secret-lastfm
+```
+
+> **`ND_AGENTS` preenchido** com agentes de metadados ativos. O reload de plugins também está habilitado por padrão, então qualquer atualização ou adição de plugin é carregada automaticamente - sem precisar reiniciar a aplicação nem reconfigurar serviços já em execução.
+
+### 3. Rode o script abaixo para criar os diretórios de trabalho
+
+```bash
+bash create_work_dirs.sh
+```
+
+> O script lê as variáveis do `.env` e cria os diretórios `HOST_DATA`, `HOST_DATA/plugins` e `HOST_MUSIC` com as permissões corretas. O subdiretório `plugins/` é onde os arquivos `.ndp` devem ficar para serem carregados automaticamente.
+
+### 4. Baixe os plugins necessários para os serviços necessários funcionarem
+
+```bash
+bash download_plugins.sh
+```
+
+> O script detecta automaticamente o caminho `HOST_DATA/plugins` do `.env` e o sugere como destino - basta dar `Enter` para confirmar. Caso o script não leia o `.env`, digite o caminho manualmente.
+
+Plugins baixados:
+
+| Plugin | Repositório |
+|---|---|
+| `apple-music.ndp` (Capas e infomações de músicas e discos) | [navidrome/apple-music-plugin](https://github.com/navidrome/apple-music-plugin) |
+| `artist-nfo-metadata.ndp` (Dados de artistas) | [metalheim/navidrome-plugin-artist-nfo-metadata](https://github.com/metalheim/navidrome-plugin-artist-nfo-metadata) |
+| `coverartarchive.ndp` (Capas e infomações de músicas e discos)| [sunsetroute1/navidrome-coverartarchive-plugin](https://github.com/sunsetroute1/navidrome-coverartarchive-plugin) |
+| `nd-lyrics.ndp` (Letras de músicas) | [J0R6IT0/navidrome-lyrics-plugin](https://github.com/J0R6IT0/navidrome-lyrics-plugin) |
+
+> O reload automático de plugins está ativo por padrão. Os `.ndp` são carregados sem precisar reiniciar os containers.
+
+### 5. Suba os containers para executar a aplicação
+
+```bash
+docker compose up -d
+```
+
+```bash
+podman-compose up -d
+```
+
+A interface estará disponível em `http://localhost:4533`.
+
+> No primeiro acesso, crie o usuário administrador pela própria interface web.
+
+---
+
+## Imagem Docker
+
+A imagem está publicada no Docker Hub:
+
+[![DockerHub](https://img.shields.io/badge/Docker%20Hub-Spoty--Vella-2496ED?logo=docker&style=for-the-badge)](https://hub.docker.com/r/alanmugiwara/spoty-vella)
+
+---
+
+## Estrutura de volumes
+
+| Volume | Descrição |
+|---|---|
+| `$HOST_DATA` | Banco de dados SQLite, plugins e configurações do Navidrome |
+| `$HOST_MUSIC` | Sua biblioteca de músicas (bind-mount) |
+
+---
+
+## Apps compatíveis (Subsonic)
+
+Por usar o protocolo Subsonic, o Spoty-Vella funciona com qualquer app que o suporte:
+
+- **Android:** Substreamer, Symfonium, DSub, Ultrasonic
+- **iOS:** Substreamer, Amperfy, play:Sub
+- **Desktop:** Sublime Music, Sonixd, Feishin
+- **CLI:** `beets`, `mopidy-subidy`
+- **Android, iOS, Windows, Linux, MacOS:** [Musly](https://github.com/dddevid/musly)
+
+---
+
+## Temas disponíveis
+
+- Dracula
+- Nord
+- Tokyo Night / Tokyo Night Light
+- Rose Piné / Rose Piné Dawn / Rose Piné Moon
+- Catppuccin Latte / Frappé / Macchiato / Mocha
+- Monokai
+- Gruvbox Dark
+- Spotify
+- Electric Purple
+- Moonbase Alpha / Bravo
+- Dark / Light / Extra Dark
+- E mais...
+
+---
+
+## Building e criação da sua própria imagem
+
+Clone este repositório e entre no caminho do projeto:
+
+``` bash
+git clone https://github.com/alanmugiwara/spoty-vella \
+  && cd spoty-vella
+```
+
+Build da imagem multiarch e upload para o seu Docker Hub:
+
+```bash
+docker buildx build \
+  --no-cache \
+  --platform linux/amd64,linux/arm64 \
+  --target final \
+  --tag SEU-USUARIO/NOME-DO-SEU-PROJETO:VERSAO \
+  --file Dockerfile \
+  --push \  
+  .
+```
+
+> Se você quer apenas buildar localmente para testar com docker compose, faça para a arquitetura da sua máquina, pois o `--load` não funciona com `--platform linux/amd64,linux/arm64` para carregar um manifest multiarch no Docker local.
+
+Suba os containers:
+
+```bash
+docker compose up -d
+```
+
+Building e execução local (AMD64):
+
+```bash
+docker buildx build \
+  --no-cache \
+  --platform linux/amd64 \
+  --target final \
+  --tag alanmugiwara/spoty-vella:v0.2 \
+  --file Dockerfile \
+  --load \
+  .
+```
+- Navegue até o diretório `app` e suba o container
+``` bash
+cd app && docker compose up -d
+```
+
+Building e execução local (ARM64):
+
+```bash
+docker buildx build \
+  --no-cache \
+  --platform linux/arm64 \
+  --target final \
+  --tag alanmugiwara/spoty-vella:v0.2 \
+  --file Dockerfile \
+  --load \
+  .
+```
+
+- Navegue atéa o diretório `app` e suba o container
+``` bash
+cd app && docker compose up -d
+```
+
+---
+
+## Ambiente de desenvolvimento
+Caso queira rodar locamelmente sem uso de conteinerização
+
+- Dependências necessárias: [GoLang 1.26+](https://go.dev/doc/install) | [Node 24](https://nodejs.org/)
+
+Instale as dependências e prepare o ambiente:
+
+```bash
+make setup
+```
+
+Rode o Spoty-Vella em modo desenvolvimento com hot-reload (frontend + backend):
+
+```bash
+make dev
+```
+
+A interface estará disponível em `http://localhost:4533`.
+
+> Para editar o frontend, mexa nos arquivos em `ui/src/`. As mudanças são refletidas automaticamente no navegador. Consulte a [documentação de desenvolvimento](https://www.navidrome.org/docs/developers/dev-environment/) para mais detalhes.
+
+---
+
+## Contato
+
+<div>
+  <a href="https://instagram.com/alancruz_tec" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
+  <a href="mailto:contato@alancruztec.com.br"><img loading="lazy" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail"></a>
+  <a href="https://linkedin.com/in/alansilvadacruz" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://alancruztec.com.br" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-My%20Website-%230077B5?style=for-the-badge&logo=wordpress&logoColor=white" alt="Website"></a>
+</div>
+
+---
+
+## Licença
+
+Este projeto é licenciado sob a [AGPL-3.0 License](https://github.com/alanmugiwara/spoty-vella?tab=GPL-3.0-1-ov-file).
+
+Spoty-Vella é um fork do [Navidrome](https://github.com/navidrome/navidrome), que também é distribuído sob AGPL-3.0.

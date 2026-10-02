@@ -472,7 +472,7 @@ const AboutDialog = ({ open, onClose }) => {
       className={classes.expandableDialog}
     >
       <DialogTitle id="about-dialog-title" onClose={onClose}>
-        Spoty-Vella Music (Fork from Navidrome v0.64.2)
+        Spoty-Vella v0.2 (Fork from Navidrome v0.64.2)
       </DialogTitle>
       <DialogContent dividers>
         <TabContent

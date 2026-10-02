@@ -122,6 +122,7 @@ const Admin = (props) => {
       loginPage={Login}
       logoutButton={Logout}
       {...props}
+      title="Spoty-Vella"
     >
       {(permissions) => [
         <Resource name="album" {...album} options={{ subMenu: 'albumList' }} />,

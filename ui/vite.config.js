@@ -59,10 +59,10 @@ export default defineConfig({
 // PWA manifest
 function manifest() {
   return {
-    name: 'Navidrome',
-    short_name: 'Navidrome',
+    name: 'Spoty-Vella',
+    short_name: 'Spoty-Vella',
     description:
-      'Navidrome, an open source web-based music collection server and streamer',
+      'Spoty-Vella, an open source web-based music collection server and streamer',
     categories: ['music', 'entertainment'],
     display: 'standalone',
     start_url: './',
