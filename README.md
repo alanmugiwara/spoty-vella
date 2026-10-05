@@ -1,8 +1,8 @@
 <a href="https://www.navidrome.org"><img src="resources/logo-192x192.png" alt="Navidrome logo" title="navidrome" align="right" height="100px" /></a>
 
 # Spoty-Vella -  O Spotify da Favela!
-[![Docker Image](https://img.shields.io/badge/Docker%20HUB-alanmugiwara%2Fspoty--vella-2496ED?color=8A2BE2&style=for-the-badge&logo=docker&logoColor=white)](https://github.com/alanmugiwara/spoty-vella)
-[![Based on RomM](https://img.shields.io/badge/Based%20on-navidrome%200.64.2-8A2BE2?style=for-the-badge)](https://github.com/navidrome/navidrome)
+[![Docker Image](https://img.shields.io/badge/Docker%20HUB-alanmugiwara%2Fspoty--vella-2496ED?color=8A2BE2&style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/alanmugiwara/spoty-vella)
+[![Based on](https://img.shields.io/badge/Based%20on-navidrome%200.64.2-8A2BE2?style=for-the-badge)](https://github.com/navidrome/navidrome)
 [![License](https://img.shields.io/badge/License-GPL--3.0-8A2BE2?style=for-the-badge)](https://github.com/alanmugiwara/spoty-vella?tab=GPL-3.0-1-ov-file)
 [![Create Date](https://img.shields.io/badge/created%20on-set%2029,%202026-8A2BE2?style=for-the-badge)](https://github.com/alanmugiwara/spoty-vella)
 [![Last update](https://img.shields.io/github/last-commit/alanmugiwara/spoty-vella?color=8A2BE2&label=Last%20Commit&style=for-the-badge)](https://github.com/alanmugiwara/spoty-vella)
